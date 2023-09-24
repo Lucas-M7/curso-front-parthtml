@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Prática</title>
+</head>
+
+<body>
+    <header>
+        <h1>Prática de Formulário</h1>
+    </header>
+    
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Curso Front-End</h2>
+            <p>Preencha os campos abaixo</p>
+
+            <form action="">
+                <div>
+                    <label for="nome">Nome</label> <br>
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div>
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="senha">Senha</label> <br>
+                    <input type="password" name="senha" id="senha">
+                </div>
+
+                <div>
+                    <p>
+                        <label for="area">Com qual área você se identifica?</label>
+                        <input type="radio" name="area" id="area" value="Front-End">Front-End
+                        <input type="radio" name="area" id="area" value="Back-End">Back-End
+                        <input type="radio" name="area" id="area" value="Full-Stack">Full-Stack
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <label for="linguagem">Quais linguagens você conhece?</label>
+                        <input type="checkbox" name="linguagem" id="linguagem" value="JavaScript">JavaScript
+                        <input type="checkbox" name="linguagem" id="linguagem" value="Python">Python
+                        <input type="checkbox" name="linguagem" id="linguagem" value="C#">C#
+                        <input type="checkbox" name="linguagem" id="linguagem" value="Java">Java
+                    </p>
+                </div>
+
+                <div>
+                    <label for="favorita">Selecione a sua linguagem favorita</label>
+                    <select name="favorita" id="favorita">
+                        <option value="JS">JS</option>
+                        <option value="Java">Java</option>
+                        <option value="Python">Python</option>
+                        <option value="C#">C#</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy;Desenvolvido por Lucas-M7</p>
+    </footer>
+</body>
+
+</html>

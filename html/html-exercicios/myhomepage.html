@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Exercício</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 658px;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            background: #ccc;
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Minha Homepage</h2>
+    </header>
+
+    <section>
+        <nav>
+            <h3>Lucas-M7</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <h3>Aulas</h3>
+            <ul>
+                <li><a href="./01-introducao.html">Introdução</a></li>
+                <li><a href="./02-listas-e-links.html">Listas e Links</a></li>
+                <li><a href="./03-formatacao-de-texto.html">Formatação de Texto</a></li>
+                <li><a href="./04-tabelas.html">Tabelas</a></li>
+                <li><a href="./05-layouts.html">Layouts</a></li>
+                <li><a href="./06-formulario.html">Formulários</a></li>
+            </ul>
+
+            <h3>Redes Socias</h3>
+            <ul>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+
+            <h3>Sites Favoritos</h3>
+            <ul>
+                <li><a href="https://ubisoft.com" target="_blank">Ubisoft</a></li>
+                <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="https:rockstargames.com" target="_blank">Rockstar Games</a></li>
+            </ul>
+        </nav>
+
+        <article>
+
+            <img src="https://avatars.githubusercontent.com/u/126524519?v=4"
+                alt="Uma foto de um lindo jovem (Lucas Mateus)" title="Eita bicho bonito">
+
+            <h2>Lucas Mateus</h2>
+
+            <p>Futuro <u>Desenvolvedor Front-End</u></p>
+
+            <p>Tenho 17 anos, jajá irei fazer 18, e estou <br>
+                estudando para me tornar um <strong>Desenvolvedor Front-End.</strong>
+            </p>
+        </article>
+    </section>
+
+    <footer>&copy;Desenvolvido por Lucas Mateus</footer>
+</body>
+
+</html>

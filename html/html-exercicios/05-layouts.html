@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts HTML</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Título da Página</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./06-formulario.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Título Artigo</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est totam numquam iure vitae, delectus tempore
+                natus! Ipsa, at amet eius praesentium accusamus cupiditate facere qui nihil sint, vero, laboriosam
+                ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illum possimus explicabo
+                blanditiis obcaecati atque. Minus, in qui, provident est deserunt fugiat pariatur molestiae cumque, quas
+                doloribus eum! Voluptates, cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odio
+                voluptas veritatis pariatur quia natus a veniam culpa temporibus? Tempora dolorem molestiae, ut dolores
+                explicabo obcaecati esse ex delectus praesentium!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt expedita accusantium inventore
+                molestiae sed laborum assumenda harum at omnis. Ex cum libero ea dolore eos cumque tempora sed ad?
+                Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit qui ipsam
+                magnam labore. Excepturi maxime beatae fuga similique rerum dolorum nisi dolores nihil? Iusto voluptatem
+                impedit id aspernatur minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi accusamus,
+                modi laudantium consequuntur maiores omnis officiis necessitatibus neque totam quisquam est minima harum
+                facere sequi dolores quo laboriosam, ratione eum.</p>
+
+        </article>
+
+    </section>
+
+    <footer>
+        <p>&copy; Desenvolved By Lucas</p>
+    </footer>
+
+</body>
+
+</html>

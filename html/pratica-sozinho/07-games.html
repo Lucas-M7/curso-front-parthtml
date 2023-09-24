@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        section:nth-of-type(1) {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        section:nth-of-type(2) {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(36, 36, 36);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Alguns Jogos que Joguei</h1>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <ul>
+                <li>God of War</li>
+            </ul>
+            <ul>
+                <li>Grand Theft Auto V</li>
+            </ul>
+            <ul>
+                <li>Watch Dogs 2</li>
+            </ul>
+            <ul>
+                <li>BF 4</li>
+            </ul>
+        </section>
+        <section>
+            <img src="https://th.bing.com/th/id/R.f645b78e51a192cb4e9caa4aac6c0875?rik=ZTglhfD9mmwNIA&riu=http%3a%2f%2fcdn.collider.com%2fwp-content%2fuploads%2fgod-of-war-image.jpg&ehk=D%2bfse8wLp7FcFA%2bqBBv%2bCP0fIUGXa8YSkuFKGmU83yk%3d&risl=&pid=ImgRaw&r=0"
+                alt="God of War" title="God Of War">
+            <img src="https://th.bing.com/th/id/OIP.o5qnw56FTy7ZbLBrSOx0OwHaEK?w=318&h=180&c=7&r=0&o=5&pid=1.7"
+                alt="GTA V" title="GTA V">
+            <img src="https://th.bing.com/th/id/OIP.vOUp_duBkKWn9orQFOmQrgHaEK?pid=ImgDet&rs=1" alt="Watch Dogs 2"
+                title="Watch Dogs 2">
+            <img src="https://th.bing.com/th/id/OIP.lNMBZLfkFgzDgoY_TYTUOwHaEK?pid=ImgDet&rs=1" alt="Battlefield 4"
+                title="Battlefield 4">
+        </section>
+        <hr>
+        <section>
+            <form action="07-games.html">
+                <label for="quest">Você já jogou algum desses jogos?</label>
+                <input type="radio" name="quest" id="quest" value="sim">sim
+                <input type="radio" name="quest" id="quest" value="não">não
+                <br> <br>
+                <label for="texto">Se não, liste aqui abaixo quais você já jogou</label> <br>
+                <textarea name="texto" id="texto" cols="15" rows="6"></textarea>
+                <br><br>
+                <label for="onde">Por onde você costuma jogar?</label>
+                <input type="checkbox" name="onde" id="onde" value="PC/Notebook">PC/Notebook
+                <input type="checkbox" name="onde" id="onde" value="Celular">Celular
+                <input type="checkbox" name="onde" id="onde" value="console">Console
+                <br> <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <hr>
+    </main>
+    <footer><p>&copy;Desenvolvido por <a href="https://github.com/Lucas-M7" target="_blank">Lucas-M7</a></p></footer>
+</body>
+
+</html>

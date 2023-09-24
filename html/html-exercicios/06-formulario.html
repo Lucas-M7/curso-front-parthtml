@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Curso Front-End HTML</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="./05-layouts.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Contato</h1>
+            <p>Preencha os campos abaixo</p>
+
+            <form action="">
+
+                <div>
+                    <label for="nome">Nome</label> <br>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label> <br>
+                    <input type="email" name="email" id="email" placeholder="Digite o seu email">
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem</label> <br>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="2" placeholder="Digite uma mensagem"></textarea>
+                </div>
+
+                <div>
+                    <p>
+                        <label for="ling">Quais linguagens você conhece?</label>
+                        <input type="radio" name="ling" id="ling" value="html"> HTML
+                        <input type="radio" name="ling" id="ling" value="CSS"> CSS
+                        <input type="radio" name="ling" id="ling" value="js"> JS
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <label for="ling">Qual profissão você se identifica?</label>
+                        <input type="checkbox" name="ling" id="ling" value="Front-End"> FRONT-END
+                        <input type="checkbox" name="ling" id="ling" value="back-end"> BACK-END
+                        <input type="checkbox" name="ling" id="ling" value="full-stack"> FULL-STACK
+                    </p>
+                </div>
+
+                <div>
+                    <label for="selecionar">Qual a sua cor favorita?</label>
+                    <select name="selecionar" id="selecionar">
+                        <option value="verde">Verde</option>
+                        <option value="azul" selected>Azul</option>
+                        <option value="roxo">Roxo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+
+        </article>
+
+    </section>
+
+    <footer>
+        <p>&copy; Desenvolved By Lucas</p>
+    </footer>
+
+</body>
+
+</html>

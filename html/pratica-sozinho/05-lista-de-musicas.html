@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Músicas</title>
+    <style>
+        header, footer{
+            text-align: center;
+            height: 100%;
+        }
+
+        fieldset{
+            height: 100%;
+            width: 490px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+
+        details{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Testando Algumas Tags HTML</h1>
+            <nav>
+                <details>
+                    <summary>Nana Kwabena</summary>
+                    <p><audio controls>
+                            <source src="Revenge Body Beat - Nana Kwabena.mp3" type="audio/mp3">
+                        </audio></p>
+                </details>
+            </nav>
+        </header>
+        <br>
+        <main>
+            <form action="">
+                <fieldset>
+                    <legend>Formulário Simples</legend>
+                    <label for="nome">Digite o seu nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome aqui">
+                    <br><br>
+                    <label for="email">Digite o seu email:</label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+                    <br><br>
+                    <label for="lang">Escolha uma das opções a seguir:</label>
+                    <input type="radio" name="lang" id="lang" value="Front-End">Front-End
+                    <input type="radio" name="lang" id="lang" value="Back-End">Back-End
+                    <input type="radio" name="lang" id="lang" value="Full-Stack">Full-Stack
+                    <br><br>
+                    <label for="linguagens">Escolha uma das lingugaens:</label>
+                    <select name="linguagens" id="linguagens">
+                        <option value="linguagens">Python</option>
+                        <option value="linguagens">C#</option>
+                        <option value="linguagens" selected>JavaScript</option>
+                        <option value="linguagens">Kotlin</option>
+                        <option value="linguagens">C</option>
+                        <option value="linguagens">C++</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </main>
+        <br>
+        <footer>&copy;By Lucas-M7</footer>
+    </div>
+</body>
+
+</html>
